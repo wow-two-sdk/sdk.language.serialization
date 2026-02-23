@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Title>WoW2.Sdk.Language.Serialization.Json.Newtonsoft.DependencyInjection</Title>
+        <PackageId>WoW2.Sdk.Language.Serialization.Json.Newtonsoft.DependencyInjection</PackageId>
+        <Description>Dependency injection support for JSON serialization with Newtonsoft.Json in language feature sets</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>serialization, json, newtonsoft, dependency-injection, infrastructure</PackageTags>
+        <Version>9.0.0-alpha.1</Version>
+        <Authors>WoW 2.0 Team</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/wow-two-sdk/sdk.language.serialization</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/wow-two-sdk/sdk.language.serialization</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>wow2.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="wow2.png" Pack="true" PackagePath=""/>
+        <None Include="README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.2" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\WoW2.Sdk.Language.Serialization.Json.Newtonsoft\WoW2.Sdk.Language.Serialization.Json.Newtonsoft.csproj" />
+    </ItemGroup>
+
+</Project>

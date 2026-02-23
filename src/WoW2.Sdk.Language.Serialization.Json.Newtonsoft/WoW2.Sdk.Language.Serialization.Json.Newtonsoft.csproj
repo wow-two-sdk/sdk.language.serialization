@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Title>WoW2.Sdk.Language.Serialization.Json.Newtonsoft</Title>
+        <PackageId>WoW2.Sdk.Language.Serialization.Json.Newtonsoft</PackageId>
+        <Description>JSON serialization implementation using Newtonsoft.Json</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>serialization, json, newtonsoft, infrastructure</PackageTags>
+        <Version>9.0.0-alpha.1</Version>
+        <Authors>WoW 2.0 Team</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/wow-two-sdk/sdk.language.serialization</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/wow-two-sdk/sdk.language.serialization</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>wow2.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="wow2.png" Pack="true" PackagePath=""/>
+        <None Include="README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\WoW2.Sdk.Language.Serialization.Json.Abstractions\WoW2.Sdk.Language.Serialization.Json.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>
